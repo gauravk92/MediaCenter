@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController storyboardIdentifier="PasteboardToday" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M4Y-Lb-cyx" customClass="TodayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKb-Vp-E4f" customClass="TodayView">
+                                <rect key="frame" x="16" y="0.0" width="288" height="100"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="WPh-e0-et7">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="M4Y-Lb-cyx" id="V4R-jB-qsh"/>
+                                            <outlet property="delegate" destination="M4Y-Lb-cyx" id="Lct-aB-RB8"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" priority="750" constant="220" id="2Ov-HQ-d2G"/>
+                                    <constraint firstItem="WPh-e0-et7" firstAttribute="leading" secondItem="UKb-Vp-E4f" secondAttribute="leading" id="Ay2-rd-vgj"/>
+                                    <constraint firstItem="WPh-e0-et7" firstAttribute="top" secondItem="UKb-Vp-E4f" secondAttribute="top" id="KtH-aC-VRL"/>
+                                    <constraint firstAttribute="height" priority="500" constant="100" id="OcV-mX-EFl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="44" id="Q1U-5s-Bdp"/>
+                                    <constraint firstAttribute="trailing" secondItem="WPh-e0-et7" secondAttribute="trailing" id="gMh-Lo-hMf"/>
+                                    <constraint firstAttribute="bottom" secondItem="WPh-e0-et7" secondAttribute="bottom" id="rsw-yZ-azB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="UKb-Vp-E4f" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="N5X-FV-gyJ"/>
+                            <constraint firstItem="UKb-Vp-E4f" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="UXN-2V-3n7"/>
+                            <constraint firstItem="UKb-Vp-E4f" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="ckD-Kf-LmM"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="UKb-Vp-E4f" secondAttribute="bottom" id="zNZ-4P-pvZ"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="100"/>
+                    <connections>
+                        <outlet property="contentHeightConstraint" destination="OcV-mX-EFl" id="tyf-MC-NBK"/>
+                        <outlet property="contentView" destination="UKb-Vp-E4f" id="Tei-9h-M4s"/>
+                        <outlet property="tableView" destination="WPh-e0-et7" id="Hdf-Oa-Qdb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="285"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

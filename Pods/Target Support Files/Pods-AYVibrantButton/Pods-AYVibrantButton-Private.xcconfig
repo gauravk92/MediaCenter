@@ -1,0 +1,5 @@
+#include "Pods-AYVibrantButton.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/AYVibrantButton" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/AYVibrantButton" "${PODS_ROOT}/Headers/Public/ActionSheetPicker2" "${PODS_ROOT}/Headers/Public/BWLongTextViewController" "${PODS_ROOT}/Headers/Public/BWSelectViewController" "${PODS_ROOT}/Headers/Public/DLog" "${PODS_ROOT}/Headers/Public/FormKit.m" "${PODS_ROOT}/Headers/Public/libextobjc"
+OTHER_LDFLAGS = ${PODS_AYVIBRANTBUTTON_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}

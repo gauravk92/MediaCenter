@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nKC-w0-0O6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="kKb-FA-UXc">
+            <objects>
+                <navigationController id="nKC-w0-0O6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pjt-sb-EMs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ajR-u1-NXm" kind="relationship" relationship="rootViewController" id="Ptf-td-fxK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sxh-Lw-r9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="446"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="MNq-1G-Qxs">
+            <objects>
+                <tableViewController id="ajR-u1-NXm" customClass="DataTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="h7K-jm-4TD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="ajR-u1-NXm" id="ThX-62-1GT"/>
+                            <outlet property="delegate" destination="ajR-u1-NXm" id="diR-nN-Lfw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="7JB-Cg-Dq6">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="edit" id="67R-1s-SCj">
+                            <connections>
+                                <action selector="editAction:" destination="ajR-u1-NXm" id="hq5-al-AyQ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="whR-fq-VTt">
+                            <connections>
+                                <action selector="settingsAction:" destination="ajR-u1-NXm" id="gWR-1Q-48g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2y7-B7-PAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="446"/>
+        </scene>
+    </scenes>
+</document>

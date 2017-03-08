@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		937522CF19EFAF4400C7B9E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 937522CE19EFAF4400C7B9E4 /* main.m */; };
+		937522D219EFAF4400C7B9E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 937522D119EFAF4400C7B9E4 /* AppDelegate.m */; };
+		937522D519EFAF4400C7B9E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937522D419EFAF4400C7B9E4 /* ViewController.m */; };
+		937522D819EFAF4400C7B9E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937522D619EFAF4400C7B9E4 /* Main.storyboard */; };
+		937522DA19EFAF4400C7B9E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937522D919EFAF4400C7B9E4 /* Images.xcassets */; };
+		937522DD19EFAF4400C7B9E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 937522DB19EFAF4400C7B9E4 /* LaunchScreen.xib */; };
+		937522E919EFAF4400C7B9E4 /* ATVRemoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 937522E819EFAF4400C7B9E4 /* ATVRemoteTests.m */; };
+		937522F619EFAFF300C7B9E4 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 937522F319EFAFF300C7B9E4 /* AsyncSocket.m */; };
+		937522F719EFAFF300C7B9E4 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 937522F519EFAFF300C7B9E4 /* AsyncUdpSocket.m */; };
+		937522FC19EFAFFB00C7B9E4 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 937522F919EFAFFB00C7B9E4 /* GCDAsyncSocket.m */; };
+		937522FD19EFAFFB00C7B9E4 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 937522FB19EFAFFB00C7B9E4 /* GCDAsyncUdpSocket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		937522E319EFAF4400C7B9E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 937522C119EFAF4400C7B9E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 937522C819EFAF4400C7B9E4;
+			remoteInfo = ATVRemote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		937522C919EFAF4400C7B9E4 /* ATVRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATVRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		937522CD19EFAF4400C7B9E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		937522CE19EFAF4400C7B9E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		937522D019EFAF4400C7B9E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		937522D119EFAF4400C7B9E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		937522D319EFAF4400C7B9E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		937522D419EFAF4400C7B9E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		937522D719EFAF4400C7B9E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		937522D919EFAF4400C7B9E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		937522DC19EFAF4400C7B9E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		937522E219EFAF4400C7B9E4 /* ATVRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATVRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		937522E719EFAF4400C7B9E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		937522E819EFAF4400C7B9E4 /* ATVRemoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATVRemoteTests.m; sourceTree = "<group>"; };
+		937522F219EFAFF300C7B9E4 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = "../../../CocoaAsyncSocket-master/RunLoop/AsyncSocket.h"; sourceTree = "<group>"; };
+		937522F319EFAFF300C7B9E4 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = "../../../CocoaAsyncSocket-master/RunLoop/AsyncSocket.m"; sourceTree = "<group>"; };
+		937522F419EFAFF300C7B9E4 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = "../../../CocoaAsyncSocket-master/RunLoop/AsyncUdpSocket.h"; sourceTree = "<group>"; };
+		937522F519EFAFF300C7B9E4 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = "../../../CocoaAsyncSocket-master/RunLoop/AsyncUdpSocket.m"; sourceTree = "<group>"; };
+		937522F819EFAFFB00C7B9E4 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = "../../../CocoaAsyncSocket-master/GCD/GCDAsyncSocket.h"; sourceTree = "<group>"; };
+		937522F919EFAFFB00C7B9E4 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = "../../../CocoaAsyncSocket-master/GCD/GCDAsyncSocket.m"; sourceTree = "<group>"; };
+		937522FA19EFAFFB00C7B9E4 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = "../../../CocoaAsyncSocket-master/GCD/GCDAsyncUdpSocket.h"; sourceTree = "<group>"; };
+		937522FB19EFAFFB00C7B9E4 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = "../../../CocoaAsyncSocket-master/GCD/GCDAsyncUdpSocket.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		937522C619EFAF4400C7B9E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		937522DF19EFAF4400C7B9E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		937522C019EFAF4400C7B9E4 = {
+			isa = PBXGroup;
+			children = (
+				937522CB19EFAF4400C7B9E4 /* ATVRemote */,
+				937522E519EFAF4400C7B9E4 /* ATVRemoteTests */,
+				937522CA19EFAF4400C7B9E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		937522CA19EFAF4400C7B9E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				937522C919EFAF4400C7B9E4 /* ATVRemote.app */,
+				937522E219EFAF4400C7B9E4 /* ATVRemoteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		937522CB19EFAF4400C7B9E4 /* ATVRemote */ = {
+			isa = PBXGroup;
+			children = (
+				937522D019EFAF4400C7B9E4 /* AppDelegate.h */,
+				937522D119EFAF4400C7B9E4 /* AppDelegate.m */,
+				937522D319EFAF4400C7B9E4 /* ViewController.h */,
+				937522D419EFAF4400C7B9E4 /* ViewController.m */,
+				937522D619EFAF4400C7B9E4 /* Main.storyboard */,
+				937522F819EFAFFB00C7B9E4 /* GCDAsyncSocket.h */,
+				937522F919EFAFFB00C7B9E4 /* GCDAsyncSocket.m */,
+				937522FA19EFAFFB00C7B9E4 /* GCDAsyncUdpSocket.h */,
+				937522FB19EFAFFB00C7B9E4 /* GCDAsyncUdpSocket.m */,
+				937522F219EFAFF300C7B9E4 /* AsyncSocket.h */,
+				937522F319EFAFF300C7B9E4 /* AsyncSocket.m */,
+				937522F419EFAFF300C7B9E4 /* AsyncUdpSocket.h */,
+				937522F519EFAFF300C7B9E4 /* AsyncUdpSocket.m */,
+				937522D919EFAF4400C7B9E4 /* Images.xcassets */,
+				937522DB19EFAF4400C7B9E4 /* LaunchScreen.xib */,
+				937522CC19EFAF4400C7B9E4 /* Supporting Files */,
+			);
+			path = ATVRemote;
+			sourceTree = "<group>";
+		};
+		937522CC19EFAF4400C7B9E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				937522CD19EFAF4400C7B9E4 /* Info.plist */,
+				937522CE19EFAF4400C7B9E4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		937522E519EFAF4400C7B9E4 /* ATVRemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				937522E819EFAF4400C7B9E4 /* ATVRemoteTests.m */,
+				937522E619EFAF4400C7B9E4 /* Supporting Files */,
+			);
+			path = ATVRemoteTests;
+			sourceTree = "<group>";
+		};
+		937522E619EFAF4400C7B9E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				937522E719EFAF4400C7B9E4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		937522C819EFAF4400C7B9E4 /* ATVRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 937522EC19EFAF4400C7B9E4 /* Build configuration list for PBXNativeTarget "ATVRemote" */;
+			buildPhases = (
+				937522C519EFAF4400C7B9E4 /* Sources */,
+				937522C619EFAF4400C7B9E4 /* Frameworks */,
+				937522C719EFAF4400C7B9E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ATVRemote;
+			productName = ATVRemote;
+			productReference = 937522C919EFAF4400C7B9E4 /* ATVRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		937522E119EFAF4400C7B9E4 /* ATVRemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 937522EF19EFAF4400C7B9E4 /* Build configuration list for PBXNativeTarget "ATVRemoteTests" */;
+			buildPhases = (
+				937522DE19EFAF4400C7B9E4 /* Sources */,
+				937522DF19EFAF4400C7B9E4 /* Frameworks */,
+				937522E019EFAF4400C7B9E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				937522E419EFAF4400C7B9E4 /* PBXTargetDependency */,
+			);
+			name = ATVRemoteTests;
+			productName = ATVRemoteTests;
+			productReference = 937522E219EFAF4400C7B9E4 /* ATVRemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		937522C119EFAF4400C7B9E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = gkapps;
+				TargetAttributes = {
+					937522C819EFAF4400C7B9E4 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					937522E119EFAF4400C7B9E4 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 937522C819EFAF4400C7B9E4;
+					};
+				};
+			};
+			buildConfigurationList = 937522C419EFAF4400C7B9E4 /* Build configuration list for PBXProject "ATVRemote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 937522C019EFAF4400C7B9E4;
+			productRefGroup = 937522CA19EFAF4400C7B9E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				937522C819EFAF4400C7B9E4 /* ATVRemote */,
+				937522E119EFAF4400C7B9E4 /* ATVRemoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		937522C719EFAF4400C7B9E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937522D819EFAF4400C7B9E4 /* Main.storyboard in Resources */,
+				937522DD19EFAF4400C7B9E4 /* LaunchScreen.xib in Resources */,
+				937522DA19EFAF4400C7B9E4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		937522E019EFAF4400C7B9E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		937522C519EFAF4400C7B9E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937522FC19EFAFFB00C7B9E4 /* GCDAsyncSocket.m in Sources */,
+				937522D519EFAF4400C7B9E4 /* ViewController.m in Sources */,
+				937522F719EFAFF300C7B9E4 /* AsyncUdpSocket.m in Sources */,
+				937522D219EFAF4400C7B9E4 /* AppDelegate.m in Sources */,
+				937522FD19EFAFFB00C7B9E4 /* GCDAsyncUdpSocket.m in Sources */,
+				937522CF19EFAF4400C7B9E4 /* main.m in Sources */,
+				937522F619EFAFF300C7B9E4 /* AsyncSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		937522DE19EFAF4400C7B9E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937522E919EFAF4400C7B9E4 /* ATVRemoteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		937522E419EFAF4400C7B9E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 937522C819EFAF4400C7B9E4 /* ATVRemote */;
+			targetProxy = 937522E319EFAF4400C7B9E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		937522D619EFAF4400C7B9E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				937522D719EFAF4400C7B9E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		937522DB19EFAF4400C7B9E4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				937522DC19EFAF4400C7B9E4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		937522EA19EFAF4400C7B9E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		937522EB19EFAF4400C7B9E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		937522ED19EFAF4400C7B9E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ATVRemote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		937522EE19EFAF4400C7B9E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ATVRemote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		937522F019EFAF4400C7B9E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ATVRemoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATVRemote.app/ATVRemote";
+			};
+			name = Debug;
+		};
+		937522F119EFAF4400C7B9E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ATVRemoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATVRemote.app/ATVRemote";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		937522C419EFAF4400C7B9E4 /* Build configuration list for PBXProject "ATVRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				937522EA19EFAF4400C7B9E4 /* Debug */,
+				937522EB19EFAF4400C7B9E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		937522EC19EFAF4400C7B9E4 /* Build configuration list for PBXNativeTarget "ATVRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				937522ED19EFAF4400C7B9E4 /* Debug */,
+				937522EE19EFAF4400C7B9E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		937522EF19EFAF4400C7B9E4 /* Build configuration list for PBXNativeTarget "ATVRemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				937522F019EFAF4400C7B9E4 /* Debug */,
+				937522F119EFAF4400C7B9E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 937522C119EFAF4400C7B9E4 /* Project object */;
+}

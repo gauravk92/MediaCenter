@@ -1,0 +1,6 @@
+framework module TableViewFramework {
+  umbrella header "TableViewFramework.h"
+
+  export *
+  module * { export * }
+}

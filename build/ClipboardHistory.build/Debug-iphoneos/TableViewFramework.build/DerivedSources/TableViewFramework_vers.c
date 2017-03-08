@@ -1,0 +1,1 @@
+ const unsigned char TableViewFrameworkVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:TableViewFramework  PROJECT:ClipboardHistory-1" "\n"; const double TableViewFrameworkVersionNumber __attribute__ ((used)) = (double)1.;

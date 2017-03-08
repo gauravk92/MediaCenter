@@ -1,0 +1,1 @@
+PODS_DLOG_OTHER_LDFLAGS = -framework "GLKit" -framework "UIKit"

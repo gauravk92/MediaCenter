@@ -1,0 +1,53 @@
+PODS:
+  - ActionSheetPicker2 (0.1)
+  - AFNetworking (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.4.1)
+  - AFNetworking/Security (2.4.1)
+  - AFNetworking/Serialization (2.4.1)
+  - AFNetworking/UIKit (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AYVibrantButton (1.0.3)
+  - BWLongTextViewController (1.0)
+  - BWSelectViewController (0.4.3)
+  - DLog (1.0.3)
+  - FormKit.m (0.4.0):
+    - ActionSheetPicker2 (~> 0.1)
+    - BWLongTextViewController (~> 1.0)
+    - BWSelectViewController
+  - libextobjc/EXTScope (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - AYVibrantButton
+  - DLog
+  - FormKit.m
+  - libextobjc/EXTScope
+
+SPEC CHECKSUMS:
+  ActionSheetPicker2: 29191d3581b49cc10d3200de3f028548ac1aa9dd
+  AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
+  AYVibrantButton: 6ef08db44395e9b819560191a048297be2e8b727
+  BWLongTextViewController: dbc59050dcff4fd7672ef29c21c6359991e5e88a
+  BWSelectViewController: d1871257a78d980a52aa543804eed8a85c2f75d0
+  DLog: c18910d173e5d4c248a8592b4045b7ef699587b7
+  FormKit.m: 68e35d2e70558109fa9ce5935e0f16a65c8b2b51
+  libextobjc: ba42e4111f433273a886cd54f0ddaddb7f62f82f
+
+COCOAPODS: 0.34.1
